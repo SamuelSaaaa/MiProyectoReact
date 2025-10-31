@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseñador de Prendas</title>
+    <!-- React y ReactDOM -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <!-- Babel para transformar JSX -->
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <!-- Primero cargamos el componente MoldePrenda -->
+    <script type="text/babel" src="./MoldePrenda.jsx"></script>
+
+    <!-- Luego el script para renderizar el componente -->
+    <script type="text/babel">
+        // Esperamos a que el componente MoldePrenda esté disponible
+        ReactDOM.render(
+            <MoldePrenda />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
